@@ -19,9 +19,38 @@
     background-image: url("https://thumb.ac-illust.com/b4/b4e70dd8552565a6621ac9a4af8fadd9_w.jpeg");
     background-size: 240px 240px;
   }
+
+  /* ====================
+     Nav
+  ===================== */
+  nav {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.85);
+    color: white;
+    border-radius: 999px;
+    padding: 10px 24px;
+    display: flex;
+    gap: 20px;
+    z-index: 100;
+    font-size: 14px;
+  }
+
+  nav a {
+    cursor: pointer;
+    opacity: 0.8;
+  }
 </style>
 
 <body>
+  <nav>
+    <a @click="function() {}">About</a>
+    <a href="#works">Works</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
   <h1>Hello! I am Koufuu.</h1>
   <p>An application engineer and a CTF player.</p>
 
